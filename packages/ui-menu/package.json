@@ -1,0 +1,14 @@
+{
+  "name": "@harness/ui-menu",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@harness/hooks": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": { "typescript": "catalog:" }
+}

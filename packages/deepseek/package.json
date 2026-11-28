@@ -1,0 +1,20 @@
+{
+  "name": "@harness/deepseek",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/auth": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/files": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/model-provider": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

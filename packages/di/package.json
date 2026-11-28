@@ -1,0 +1,19 @@
+{
+  "name": "@harness/di",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./vite": "./src/vite.ts"
+  },
+  "dependencies": {
+    "@harness/hot": "workspace:*",
+    "magic-string": "^0.30.21",
+    "reactivity": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

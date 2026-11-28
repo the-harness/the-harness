@@ -1,0 +1,274 @@
+/*
+ * UI reference skill: vscode-ui
+ * Reference revision: 4378eb0b965339a354d357fcb5ae33d2e10bf20e
+ * Reference components: TreeView
+ * Adaptation: Self-contained tree styles with compact root spacing and aligned indent guides.
+ */
+
+.vc-tree-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vc-tree {
+  position: relative;
+  width: 100%;
+  font-size: 13px;
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: 0 !important;
+}
+
+.vc-tree-viewport {
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.vc-tree-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.vc-tree-rows {
+  position: relative;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  contain: strict;
+  overflow: hidden;
+}
+
+.vc-tree-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.vc-tree-row-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.vc-tree-indent {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+}
+
+.vc-tree-indent-guide {
+  width: 8px;
+  height: 100%;
+  border-left: 1px solid transparent;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.vc-tree:hover .vc-tree-indent-guide:not(.active),
+.vc-tree:focus-within .vc-tree-indent-guide:not(.active),
+.vc-tree.always .vc-tree-indent-guide:not(.active) {
+  opacity: 1;
+  border-left-color: var(--control-border);
+}
+
+.vc-tree:hover .vc-tree-indent-guide.active,
+.vc-tree:focus-within .vc-tree-indent-guide.active,
+.vc-tree.always .vc-tree-indent-guide.active {
+  opacity: 1;
+  border-left-color: var(--subtle);
+}
+
+.vc-tree-twistie {
+  box-sizing: content-box;
+  width: 16px;
+  height: 100%;
+  padding-right: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(3px);
+}
+
+.vc-twistie-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.1s ease;
+}
+
+.vc-tree-twistie.collapsed .vc-twistie-icon {
+  transform: rotate(-90deg);
+}
+
+.vc-tree-contents {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.vc-tree-label-container {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--vc-decoration-color, inherit);
+}
+
+.vc-tree-label-container.strikethrough .vc-tree-label {
+  text-decoration: line-through;
+}
+
+.vc-tree-resource[data-decoration]::after {
+  content: attr(data-decoration);
+  margin-left: auto;
+  padding-left: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--vc-decoration-color, inherit);
+  flex-shrink: 0;
+}
+
+.vc-tree-node-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.vc-tree-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vc-tree-description {
+  margin-left: 8px;
+  font-size: 0.9em;
+  opacity: 0.7;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.vc-tree-row .actions {
+  display: none;
+  align-items: center;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
+.vc-tree-row:hover .actions,
+.vc-tree-row:focus-within .actions,
+.vc-tree:focus-within .vc-tree-row.focused .actions {
+  display: flex;
+}
+
+.vc-tree-row:has(.actions):hover .vc-tree-description,
+.vc-tree-row:has(.actions):focus-within .vc-tree-description,
+.vc-tree:focus-within .vc-tree-row.focused:has(.actions) .vc-tree-description {
+  display: none;
+}
+
+.vc-tree-row.selected {
+  background: var(--selected);
+}
+
+.vc-tree-row:hover:not(.selected):not(.focused) {
+  background: var(--hover);
+}
+
+.vc-tree:focus .vc-tree-row.focused {
+  background: var(--hover);
+  outline: 1px solid var(--selection-border);
+  outline-offset: -1px;
+}
+
+.vc-tree:focus .vc-tree-row.selected {
+  background: var(--active-selection);
+}
+
+.vc-tree-row.drag-before {
+  box-shadow: inset 0 2px 0 0 var(--selection-border);
+}
+
+.vc-tree-row.drag-after {
+  box-shadow: inset 0 -2px 0 0 var(--selection-border);
+}
+
+.vc-tree-row.drag-inside {
+  background: var(--drop-background) !important;
+  outline: 1px solid var(--selection-border);
+  outline-offset: -1px;
+}
+
+.vc-tree-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  z-index: 14;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 800ms linear;
+}
+
+.vc-tree-scrollbar.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 100ms linear;
+}
+
+.vc-tree-thumb {
+  position: absolute;
+  width: 10px;
+  background: var(--scrollbar-thumb);
+}
+
+.vc-tree-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.vc-tree-thumb.active {
+  background: var(--scrollbar-thumb-active);
+}
+
+.vc-tree-shadow {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 100%;
+  height: 3px;
+  box-shadow: var(--shadow) 0 6px 6px -6px inset;
+  pointer-events: none;
+}
+
+.vc-tree-shadow-corner {
+  left: 0;
+  width: 3px;
+}

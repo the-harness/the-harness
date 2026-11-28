@@ -1,0 +1,37 @@
+{
+  "name": "@harness/ui-workspace",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node.ts",
+    "./workbench": "./src/workbench.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/state-sync": "workspace:*",
+    "@harness/stream": "workspace:*",
+    "@harness/transport": "workspace:*",
+    "@harness/ui-components-base": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-menu": "workspace:*",
+    "@harness/ui-editor": "workspace:*",
+    "@harness/ui-file-picker": "workspace:*",
+    "@harness/ui-notifications": "workspace:*",
+    "@harness/ui-sessions": "workspace:*",
+    "@harness/ui-storage": "workspace:*",
+    "@harness/ui-tree-view": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "@harness/workspace-catalog": "workspace:*",
+    "chokidar": "^6.0.0",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

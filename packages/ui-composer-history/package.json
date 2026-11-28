@@ -1,0 +1,17 @@
+{
+  "name": "@harness/ui-composer-history",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/ui-chat": "workspace:*",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

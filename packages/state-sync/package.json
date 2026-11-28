@@ -1,0 +1,21 @@
+{
+  "name": "@harness/state-sync",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/stream": "workspace:*",
+    "@harness/transport": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

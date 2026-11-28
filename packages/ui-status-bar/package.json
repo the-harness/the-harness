@@ -1,0 +1,14 @@
+{
+  "name": "@harness/ui-status-bar",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

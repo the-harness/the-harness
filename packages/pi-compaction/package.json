@@ -1,0 +1,22 @@
+{
+  "name": "@harness/pi-compaction",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/context-size": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

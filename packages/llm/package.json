@@ -1,0 +1,17 @@
+{
+  "name": "@harness/llm",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/model-provider": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

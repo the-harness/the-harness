@@ -1,0 +1,20 @@
+{
+  "name": "@harness/agent-loop",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/context": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

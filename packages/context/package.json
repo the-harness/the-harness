@@ -1,0 +1,19 @@
+{
+  "name": "@harness/context",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/linked-tree": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

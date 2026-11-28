@@ -1,0 +1,679 @@
+[
+  {
+    "id": "vscode.bat",
+    "directory": "bat",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.bat/language-and-grammar",
+        "fixture": { "path": "smoke.bat", "text": "@echo off\necho hello", "languageId": "bat" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.clojure",
+    "directory": "clojure",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.clojure/language-and-grammar",
+        "fixture": {
+          "path": "smoke.clj",
+          "text": "(defn greet [x] (str \"hi \" x))",
+          "languageId": "clojure"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.coffeescript",
+    "directory": "coffeescript",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.coffeescript/language-and-grammar",
+        "fixture": {
+          "path": "smoke.coffee",
+          "text": "square = (x) -> x * x",
+          "languageId": "coffeescript"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.cpp",
+    "directory": "cpp",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.cpp/language-and-grammar",
+        "fixture": { "path": "smoke.c", "text": "int main(void) { return 42; }", "languageId": "c" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.csharp",
+    "directory": "csharp",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.csharp/language-and-grammar",
+        "fixture": {
+          "path": "smoke.cs",
+          "text": "class Smoke { string Name = \"value\"; }",
+          "languageId": "csharp"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.css",
+    "directory": "css",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.css/language-and-grammar",
+        "fixture": { "path": "smoke.css", "text": "body { color: red; }", "languageId": "css" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.dart",
+    "directory": "dart",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.dart/language-and-grammar",
+        "fixture": {
+          "path": "smoke.dart",
+          "text": "void main() { print(\"hello\"); }",
+          "languageId": "dart"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.diff",
+    "directory": "diff",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.diff/language-and-grammar",
+        "fixture": {
+          "path": "smoke.diff",
+          "text": "diff --git a/a b/a\n--- a/a\n+++ b/a\n@@ -1 +1 @@\n-old\n+new",
+          "languageId": "diff"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.docker",
+    "directory": "docker",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.docker/language-and-grammar",
+        "fixture": {
+          "path": "Dockerfile",
+          "text": "FROM node:24\nRUN echo hello",
+          "languageId": "dockerfile"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.dotenv",
+    "directory": "dotenv",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.dotenv/language-and-grammar",
+        "fixture": { "path": ".env", "text": "SMOKE=\"hello\"\n# comment", "languageId": "dotenv" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.fsharp",
+    "directory": "fsharp",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.fsharp/language-and-grammar",
+        "fixture": { "path": "smoke.fs", "text": "let square x = x * x", "languageId": "fsharp" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.go",
+    "directory": "go",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.go/language-and-grammar",
+        "fixture": {
+          "path": "smoke.go",
+          "text": "package main\nfunc main() { println(\"hello\") }",
+          "languageId": "go"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.groovy",
+    "directory": "groovy",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.groovy/language-and-grammar",
+        "fixture": {
+          "path": "smoke.groovy",
+          "text": "def value = \"hello\"\nprintln value",
+          "languageId": "groovy"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.handlebars",
+    "directory": "handlebars",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.handlebars/language-and-grammar",
+        "fixture": {
+          "path": "smoke.hbs",
+          "text": "<div>{{name}}</div>",
+          "languageId": "handlebars"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.hlsl",
+    "directory": "hlsl",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.hlsl/language-and-grammar",
+        "fixture": {
+          "path": "smoke.hlsl",
+          "text": "float4 main() : SV_Target { return float4(1,0,0,1); }",
+          "languageId": "hlsl"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.html",
+    "directory": "html",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.html/language-and-grammar",
+        "fixture": {
+          "path": "smoke.html",
+          "text": "<div class=\"smoke\">hello</div>",
+          "languageId": "html"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.ini",
+    "directory": "ini",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.ini/language-and-grammar",
+        "fixture": { "path": "smoke.ini", "text": "[section]\nkey=value", "languageId": "ini" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.java",
+    "directory": "java",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.java/language-and-grammar",
+        "fixture": {
+          "path": "Smoke.java",
+          "text": "class Smoke { String value = \"hello\"; }",
+          "languageId": "java"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.javascript",
+    "directory": "javascript",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.javascript/language-and-grammar",
+        "fixture": {
+          "path": "smoke.jsx",
+          "text": "const value = <div>Hello</div>;",
+          "languageId": "javascriptreact"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.json",
+    "directory": "json",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.json/language-and-grammar",
+        "fixture": {
+          "path": "smoke.json",
+          "text": "{\"value\":42,\"text\":\"hello\"}",
+          "languageId": "json"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.julia",
+    "directory": "julia",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.julia/language-and-grammar",
+        "fixture": {
+          "path": "smoke.jl",
+          "text": "function square(x)\n  x * x\nend",
+          "languageId": "julia"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.latex",
+    "directory": "latex",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.latex/language-and-grammar",
+        "fixture": {
+          "path": "smoke.sty",
+          "text": "\newcommand{\\smoke}{Hello}",
+          "languageId": "tex"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.less",
+    "directory": "less",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.less/language-and-grammar",
+        "fixture": {
+          "path": "smoke.less",
+          "text": "@color: red;\nbody { color: @color; }",
+          "languageId": "less"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.log",
+    "directory": "log",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.log/language-and-grammar",
+        "fixture": {
+          "path": "smoke.log",
+          "text": "2026-11-26 12:00:00 INFO smoke\n2026-11-26 12:00:01 ERROR fail",
+          "languageId": "log"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.lua",
+    "directory": "lua",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.lua/language-and-grammar",
+        "fixture": {
+          "path": "smoke.lua",
+          "text": "local value = \"hello\"\nprint(value)",
+          "languageId": "lua"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.make",
+    "directory": "make",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.make/language-and-grammar",
+        "fixture": { "path": "Makefile", "text": "all:\n\t@echo hello", "languageId": "makefile" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.markdown",
+    "directory": "markdown-basics",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.markdown/language-and-grammar",
+        "fixture": {
+          "path": "smoke.md",
+          "text": "# Heading\n\n**bold** [link](./target.md)",
+          "languageId": "markdown"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.builtin-notebook-renderers",
+    "directory": "notebook-renderers",
+    "minimumSmokeTests": []
+  },
+  {
+    "id": "vscode.objective-c",
+    "directory": "objective-c",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.objective-c/language-and-grammar",
+        "fixture": {
+          "path": "smoke.m",
+          "text": "@interface Smoke : NSObject\n@end",
+          "languageId": "objective-c"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.perl",
+    "directory": "perl",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.perl/language-and-grammar",
+        "fixture": {
+          "path": "smoke.pl",
+          "text": "my $value = \"hello\";\nprint $value;",
+          "languageId": "perl"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.php",
+    "directory": "php",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.php/language-and-grammar",
+        "fixture": {
+          "path": "smoke.php",
+          "text": "<?php\n$value = \"hello\";\necho $value;",
+          "languageId": "php"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.powershell",
+    "directory": "powershell",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.powershell/language-and-grammar",
+        "fixture": {
+          "path": "smoke.ps1",
+          "text": "$value = \"hello\"\nWrite-Output $value",
+          "languageId": "powershell"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.prompt",
+    "directory": "prompt-basics",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.prompt/language-and-grammar",
+        "fixture": {
+          "path": "smoke.prompt.md",
+          "text": "---\ndescription: Smoke\n---\nRead #file:main.ts",
+          "languageId": "prompt"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.pug",
+    "directory": "pug",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.pug/language-and-grammar",
+        "fixture": { "path": "smoke.pug", "text": "div.smoke\n  p Hello", "languageId": "jade" }
+      }
+    ]
+  },
+  {
+    "id": "vscode.python",
+    "directory": "python",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.python/language-and-grammar",
+        "fixture": {
+          "path": "smoke.py",
+          "text": "def greet(name):\n    return f\"Hello {name}\"",
+          "languageId": "python"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.r",
+    "directory": "r",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.r/language-and-grammar",
+        "fixture": {
+          "path": "smoke.R",
+          "text": "value <- \"hello\"\nprint(value)",
+          "languageId": "r"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.razor",
+    "directory": "razor",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.razor/language-and-grammar",
+        "fixture": {
+          "path": "smoke.cshtml",
+          "text": "@model Smoke\n<div>@Model.Name</div>",
+          "languageId": "razor"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.restructuredtext",
+    "directory": "restructuredtext",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.restructuredtext/language-and-grammar",
+        "fixture": {
+          "path": "smoke.rst",
+          "text": "Heading\n=======\n\n**bold**",
+          "languageId": "restructuredtext"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.ruby",
+    "directory": "ruby",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.ruby/language-and-grammar",
+        "fixture": {
+          "path": "smoke.rb",
+          "text": "def greet(name)\n  \"Hello #{name}\"\nend",
+          "languageId": "ruby"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.rust",
+    "directory": "rust",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.rust/language-and-grammar",
+        "fixture": {
+          "path": "smoke.rs",
+          "text": "fn main() { println!(\"hello\"); }",
+          "languageId": "rust"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.scss",
+    "directory": "scss",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.scss/language-and-grammar",
+        "fixture": {
+          "path": "smoke.scss",
+          "text": "$color: red;\nbody { color: $color; }",
+          "languageId": "scss"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.shaderlab",
+    "directory": "shaderlab",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.shaderlab/language-and-grammar",
+        "fixture": {
+          "path": "smoke.shader",
+          "text": "Shader \"Smoke\" { SubShader { Pass { } } }",
+          "languageId": "shaderlab"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.shellscript",
+    "directory": "shellscript",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.shellscript/language-and-grammar",
+        "fixture": {
+          "path": "smoke.sh",
+          "text": "#!/bin/sh\nvalue=\"hello\"\necho \"$value\"",
+          "languageId": "shellscript"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.sql",
+    "directory": "sql",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.sql/language-and-grammar",
+        "fixture": {
+          "path": "smoke.sql",
+          "text": "SELECT name FROM users WHERE id = 1;",
+          "languageId": "sql"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.swift",
+    "directory": "swift",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.swift/language-and-grammar",
+        "fixture": {
+          "path": "smoke.swift",
+          "text": "let value: String = \"hello\"\nprint(value)",
+          "languageId": "swift"
+        }
+      }
+    ]
+  },
+  { "id": "vscode.theme-abyss", "directory": "theme-abyss", "minimumSmokeTests": [] },
+  { "id": "vscode.theme-defaults", "directory": "theme-defaults", "minimumSmokeTests": [] },
+  { "id": "vscode.theme-kimbie-dark", "directory": "theme-kimbie-dark", "minimumSmokeTests": [] },
+  {
+    "id": "vscode.vscode-modern-icons",
+    "directory": "theme-modern-icons",
+    "minimumSmokeTests": []
+  },
+  { "id": "vscode.theme-monokai", "directory": "theme-monokai", "minimumSmokeTests": [] },
+  {
+    "id": "vscode.theme-monokai-dimmed",
+    "directory": "theme-monokai-dimmed",
+    "minimumSmokeTests": []
+  },
+  { "id": "vscode.theme-quietlight", "directory": "theme-quietlight", "minimumSmokeTests": [] },
+  { "id": "vscode.theme-red", "directory": "theme-red", "minimumSmokeTests": [] },
+  { "id": "vscode.vscode-theme-seti", "directory": "theme-seti", "minimumSmokeTests": [] },
+  {
+    "id": "vscode.theme-solarized-dark",
+    "directory": "theme-solarized-dark",
+    "minimumSmokeTests": []
+  },
+  {
+    "id": "vscode.theme-solarized-light",
+    "directory": "theme-solarized-light",
+    "minimumSmokeTests": []
+  },
+  {
+    "id": "vscode.theme-tomorrow-night-blue",
+    "directory": "theme-tomorrow-night-blue",
+    "minimumSmokeTests": []
+  },
+  {
+    "id": "vscode.typescript",
+    "directory": "typescript-basics",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.typescript/language-and-grammar",
+        "fixture": {
+          "path": "smoke.ts",
+          "text": "/** A value */\nconst value: number = 42;",
+          "languageId": "typescript"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.vb",
+    "directory": "vb",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.vb/language-and-grammar",
+        "fixture": {
+          "path": "smoke.vb",
+          "text": "Module Smoke\n Dim value As String = \"hello\"\nEnd Module",
+          "languageId": "vb"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.xml",
+    "directory": "xml",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.xml/language-and-grammar",
+        "fixture": {
+          "path": "smoke.xml",
+          "text": "<root attribute=\"value\"><child>hello</child></root>",
+          "languageId": "xml"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vscode.yaml",
+    "directory": "yaml",
+    "minimumSmokeTests": [
+      {
+        "id": "vscode.yaml/language-and-grammar",
+        "fixture": {
+          "path": "docker-compose.yml",
+          "text": "services:\n  web:\n    image: nginx",
+          "languageId": "dockercompose"
+        }
+      }
+    ]
+  }
+]

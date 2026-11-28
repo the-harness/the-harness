@@ -1,0 +1,20 @@
+{
+  "name": "@harness/session-digest",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/sqlite": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

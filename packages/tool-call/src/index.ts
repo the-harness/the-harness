@@ -1,0 +1,17 @@
+export {
+  AddToolMessage,
+  FreeformToolDefinition,
+  RemoveToolMessage,
+  ToolCallService,
+  ToolDefinition,
+  ZodToolDefinition,
+  freeformTool,
+  functionTool,
+  useToolCall,
+  useToolCallCompaction,
+  type ToolCallHooks,
+  type ToolCallInput,
+  type ToolExecutionContext,
+  type ToolOutput,
+  type ToolOutputChunk,
+} from "./toolCallService.ts";

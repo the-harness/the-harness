@@ -1,0 +1,19 @@
+{
+  "name": "@harness/session-catalog",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/sqlite": "workspace:*",
+    "@harness/state-sync": "workspace:*",
+    "zod": "catalog:",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

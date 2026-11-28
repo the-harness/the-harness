@@ -1,0 +1,46 @@
+{
+  "name": "@harness/ui-chat",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./contract": "./src/contract.ts",
+    "./node": "./src/node.ts",
+    "./types": "./src/types.ts",
+    "./workbench": "./src/workbench.ts"
+  },
+  "dependencies": {
+    "@harness/agent-preset": "workspace:*",
+    "@harness/chat-session": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/gateway": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/image-storage": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/pi-tools": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/session-manager": "workspace:*",
+    "@harness/session-status": "workspace:*",
+    "@harness/state-sync": "workspace:*",
+    "@harness/stream": "workspace:*",
+    "@harness/ui-chat-manager": "workspace:*",
+    "@harness/ui-components-base": "workspace:*",
+    "@harness/ui-components-tools": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-menu": "workspace:*",
+    "@harness/ui-notifications": "workspace:*",
+    "@harness/ui-sessions": "workspace:*",
+    "@harness/ui-storage": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@harness/ui-workspace": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "markstream-vue": "^2.0.32",
+    "reka-ui": "^2.11.0",
+    "shiki": "^4.6.0",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

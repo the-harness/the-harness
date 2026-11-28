@@ -1,0 +1,71 @@
+/* UI reference skill: vscode-ui; revision: 4378eb0b965339a354d357fcb5ae33d2e10bf20e; components: Menu, ContextMenu. Adaptation: workbench theme tokens, Reka state selectors and native scrolling. */
+/* Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. */
+.harness-menu.popup-menu {
+  box-sizing: border-box;
+  min-width: min(180px, calc(100vw - 16px));
+  max-width: min(420px, calc(100vw - 16px));
+  max-height: min(60vh, var(--reka-popper-available-height, calc(100vh - 16px)));
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 4px;
+  border: 1px solid var(--border, #454545);
+  border-radius: 5px;
+  background: var(--raised, #252526);
+  color: var(--fg, #cccccc);
+  box-shadow: 0 5px 20px var(--shadow, #0005);
+  font-size: 13px;
+  z-index: var(--menu-z-index, 3000);
+}
+.harness-menu.popup-menu[data-state="open"] { animation: harness-menu-appear 83ms linear; }
+.harness-menu.popup-menu.harness-submenu { animation: none; }
+@keyframes harness-menu-appear { from { opacity: 0; } to { opacity: 1; } }
+.harness-menu .menu-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 24px;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 3px;
+  line-height: 24px;
+  outline: none;
+  cursor: default;
+  user-select: none;
+}
+.harness-menu .menu-item-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 16px;
+}
+.harness-menu .menu-item-label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.harness-menu .menu-item[data-highlighted] {
+  background: var(--menu-selection, #094771);
+  color: var(--strong, #ffffff);
+  outline: none;
+}
+.harness-menu .menu-item[data-highlighted]:focus-visible {
+  outline: 1px solid var(--selection-border, #007fd4);
+  outline-offset: -1px;
+}
+.harness-menu .menu-item[data-disabled] { opacity: 0.4; }
+.harness-menu .menu-item.danger:not([data-highlighted]) { color: var(--red, #f48771); }
+.harness-menu .menu-item kbd {
+  flex-shrink: 0;
+  margin-left: 16px;
+  font: inherit;
+  opacity: 0.7;
+}
+.harness-menu .menu-item[data-highlighted] kbd { color: inherit; opacity: 1; }
+.harness-menu .menu-submenu-arrow { flex: 0 0 16px; margin-left: 12px; }
+.harness-menu .menu-separator { height: 1px; margin: 4px 0; background: var(--border, #454545); }
+@media (prefers-reduced-motion: reduce) {
+  .harness-menu.popup-menu[data-state="open"] { animation-duration: 0s; }
+}

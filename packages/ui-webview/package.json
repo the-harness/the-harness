@@ -1,0 +1,17 @@
+{
+  "name": "@harness/ui-webview",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

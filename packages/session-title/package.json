@@ -1,0 +1,17 @@
+{
+  "name": "@harness/session-title",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/session-catalog": "workspace:*",
+    "@harness/session-digest": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

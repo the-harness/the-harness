@@ -1,0 +1,22 @@
+{
+  "name": "@harness/tool-call",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/pi-compaction": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "reactivity": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

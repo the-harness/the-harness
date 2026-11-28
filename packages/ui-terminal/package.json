@@ -1,0 +1,26 @@
+{
+  "name": "@harness/ui-terminal",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./workbench": "./src/workbench.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-menu": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@xterm/addon-clipboard": "^0.2.0",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/addon-search": "^0.15.0",
+    "@xterm/addon-unicode11": "^0.8.0",
+    "@xterm/addon-web-links": "^0.11.0",
+    "@xterm/addon-webgl": "^0.18.0",
+    "@xterm/xterm": "^5.5.0",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

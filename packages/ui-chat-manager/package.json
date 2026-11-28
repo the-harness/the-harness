@@ -1,0 +1,24 @@
+{
+  "name": "@harness/ui-chat-manager",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/state-sync": "workspace:*",
+    "@harness/stream": "workspace:*",
+    "@harness/transport": "workspace:*",
+    "@harness/ui-chat": "workspace:*",
+    "@harness/ui-composer-history": "workspace:*",
+    "@harness/ui-sessions": "workspace:*",
+    "@harness/ui-storage": "workspace:*",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@harness/vscode-editor-compat",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./contributions": "./src/contributions.ts",
+    "./contribution-state": "./src/contribution-state.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/ui-commands": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-editor": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@harness/ui-workspace": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "@harness/vscode-types": "workspace:*",
+    "jsonc-parser": "^3.3.1",
+    "monaco-editor": "^0.52.2",
+    "picomatch": "^4.0.7",
+    "vscode-oniguruma": "^2.0.1",
+    "vscode-textmate": "^9.3.2",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "@types/picomatch": "^4.0.2",
+    "typescript": "catalog:"
+  }
+}

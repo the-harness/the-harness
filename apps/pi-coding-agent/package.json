@@ -1,0 +1,48 @@
+{
+  "name": "@harness/pi-coding-agent-cli",
+  "version": "1.6.1",
+  "private": true,
+  "description": "Harness coding agent for the terminal",
+  "license": "GPL-3.0-or-later",
+  "bin": {
+    "harness-pi": "./dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vp build",
+    "pack:cli": "npm pack ./dist",
+    "pack:standalone": "pnpm run build && node scripts/pack-standalone.mjs"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "1.6.1",
+    "@earendil-works/pi-coding-agent": "1.6.1",
+    "@earendil-works/pi-tui": "1.6.1"
+  },
+  "devDependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/context-size": "workspace:*",
+    "@harness/cwd": "workspace:*",
+    "@harness/deepseek": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/linked-tree": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/mcp": "workspace:*",
+    "@harness/model-provider": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/pi-coding-agent": "workspace:*",
+    "@harness/pi-compaction": "workspace:*",
+    "@harness/pi-tools": "workspace:*",
+    "@harness/sqlite": "workspace:*",
+    "@harness/tool-call": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "@types/node": "catalog:",
+    "reactivity": "catalog:",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:",
+    "zod": "catalog:"
+  },
+  "engines": {
+    "node": "26.x"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@harness/ui-commands",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

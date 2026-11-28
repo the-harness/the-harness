@@ -1,0 +1,15 @@
+node_modules
+.pnpm-store/
+dist
+*.log
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.claude/worktrees/
+.harness/

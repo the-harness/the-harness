@@ -1,0 +1,21 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  "@types/node": ^26.6.6
+  reactivity: npm:@reactive-vscode/reactivity@^1.0.2
+  typescript: ^7.0.2
+  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
+  vite-plus: 1.7.0
+  zod: ^4.6.7
+allowBuilds:
+  "@google/genai": false
+  node-pty: true
+  protobufjs: false
+overrides:
+  vite@*: "catalog:"
+minimumReleaseAgeExclude:
+  - markstream-core@2.0.32
+  - markstream-vue@2.0.32
+  - stream-markdown-parser@1.2.31

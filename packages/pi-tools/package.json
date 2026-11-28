@@ -1,0 +1,24 @@
+{
+  "name": "@harness/pi-tools",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./ui": "./src/ui/index.ts"
+  },
+  "dependencies": {
+    "@harness/context": "workspace:*",
+    "@harness/cwd": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/tool-call": "workspace:*",
+    "@harness/ui-components-tools": "workspace:*",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

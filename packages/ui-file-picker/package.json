@@ -1,0 +1,24 @@
+{
+  "name": "@harness/ui-file-picker",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./contract": "./src/contract.ts",
+    "./node": "./src/node.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/ui-components-base": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-menu": "workspace:*",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

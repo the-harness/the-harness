@@ -1,0 +1,23 @@
+{
+  "name": "@harness/ui-editor",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/ui-chat": "workspace:*",
+    "@harness/ui-config": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-notifications": "workspace:*",
+    "@harness/ui-workbench": "workspace:*",
+    "@harness/ui-workspace": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "monaco-editor": "^0.52.2",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

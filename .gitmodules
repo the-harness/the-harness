@@ -1,0 +1,31 @@
+[submodule "references/kimi-code"]
+	path = references/kimi-code
+	url = https://github.com/MoonshotAI/kimi-code.git
+	shallow = true
+[submodule "references/deepseek-harness"]
+	path = references/deepseek-harness
+	url = https://github.com/deepseek-ai/deepseek-harness.git
+	shallow = true
+[submodule "references/codex"]
+	path = references/codex
+	url = https://github.com/openai/codex.git
+	shallow = true
+[submodule "references/pi"]
+	path = references/pi
+	url = https://github.com/earendil-works/pi.git
+	shallow = true
+[submodule "references/opencode"]
+	path = references/opencode
+	url = https://github.com/anomalyco/opencode.git
+	shallow = true
+[submodule "references/zcode"]
+	path = references/zcode
+	url = https://github.com/zai-org/ZCode.git
+	shallow = true
+[submodule "references/t3code"]
+	path = references/t3code
+	url = https://github.com/pingdotgg/t3code.git
+[submodule "references/vscode"]
+	path = references/vscode
+	url = https://github.com/microsoft/vscode.git
+	shallow = true

@@ -1,0 +1,30 @@
+{
+  "name": "@harness/pi-coding-agent",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/agent-preset": "workspace:*",
+    "@harness/agents-md": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/context-size": "workspace:*",
+    "@harness/cwd": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/mcp": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/pi-compaction": "workspace:*",
+    "@harness/pi-tools": "workspace:*",
+    "@harness/skills": "workspace:*",
+    "@harness/subagent": "workspace:*",
+    "@harness/tool-call": "workspace:*",
+    "@harness/variants": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

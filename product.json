@@ -1,0 +1,10 @@
+{
+  "nameShort": "Harness",
+  "nameLong": "Harness",
+  "applicationName": "harness",
+  "dataFolderName": ".harness",
+  "licenseName": "GPL-3.0-or-later",
+  "extensionAllowedBadgeProviders": [],
+  "extensionAllowedBadgeProvidersRegex": [],
+  "extensionEnabledApiProposals": {}
+}

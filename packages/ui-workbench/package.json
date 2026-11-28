@@ -1,0 +1,28 @@
+{
+  "name": "@harness/ui-workbench",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/hooks": "workspace:*",
+    "@harness/ui-chat": "workspace:*",
+    "@harness/ui-chat-manager": "workspace:*",
+    "@harness/ui-components-base": "workspace:*",
+    "@harness/ui-di": "workspace:*",
+    "@harness/ui-menu": "workspace:*",
+    "@harness/ui-notifications": "workspace:*",
+    "@harness/ui-storage": "workspace:*",
+    "@harness/ui-workspace": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "dockview-vue": "^8.9.1",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

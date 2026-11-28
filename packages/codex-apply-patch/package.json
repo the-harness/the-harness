@@ -1,0 +1,16 @@
+{
+  "name": "@harness/codex-apply-patch",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@harness/cwd": "workspace:*",
+    "@harness/di": "workspace:*"
+  }
+}

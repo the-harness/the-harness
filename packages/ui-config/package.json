@@ -1,0 +1,19 @@
+{
+  "name": "@harness/ui-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./configuration": "./src/configuration.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/ui-storage": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "vue": "^3.5.45",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@harness/image-storage",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./contract": "./src/contract.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/rpc": "workspace:*",
+    "@harness/sqlite": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@harness/chat-session",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "dependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/agent-preset": "workspace:*",
+    "@harness/agents-md": "workspace:*",
+    "@harness/chat-run": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/context-size": "workspace:*",
+    "@harness/cwd": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/image-storage": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/model-selection": "workspace:*",
+    "@harness/pi-compaction": "workspace:*",
+    "@harness/session-catalog": "workspace:*",
+    "@harness/session-title": "workspace:*",
+    "@harness/session-digest": "workspace:*",
+    "@harness/session-manager": "workspace:*",
+    "@harness/session-status": "workspace:*",
+    "@harness/skills": "workspace:*",
+    "@harness/state-sync": "workspace:*",
+    "@harness/subagent": "workspace:*",
+    "@harness/tool-call": "workspace:*",
+    "@harness/variants": "workspace:*",
+    "@harness/workspace-catalog": "workspace:*",
+    "reactivity": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

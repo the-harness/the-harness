@@ -1,0 +1,12 @@
+{
+  "name": "@harness/ui-context",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/di": "workspace:*",
+    "@harness/ui-workbench": "workspace:*"
+  }
+}

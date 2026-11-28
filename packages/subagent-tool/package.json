@@ -1,0 +1,20 @@
+{
+  "name": "@harness/subagent-tool",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/agent-loop": "workspace:*",
+    "@harness/context": "workspace:*",
+    "@harness/di": "workspace:*",
+    "@harness/llm": "workspace:*",
+    "@harness/subagent": "workspace:*",
+    "@harness/tool-call": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}
